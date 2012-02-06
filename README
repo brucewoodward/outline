@@ -1,0 +1,23 @@
+
+* copyright
+
+Same license as vim.
+
+* How to install.
+
+Copy into ~/.vim/plugin or ~/vimfiles/plugin on windows.
+
+* How to use.
+
+A fold with start with one or more '*' characters.
+
+If there is a single asterix character then the fold level is one.
+Two asterix characters would makes the fold level two etc.
+
+* TODO
+
+- Add functions to search only the headings.
+- Stop vim from automatically adding more asterix characters after the 
+  first one.
+
+

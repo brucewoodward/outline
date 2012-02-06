@@ -1,3 +1,15 @@
+" Vim plugin to find files and buffers similar to textmate.
+" Last Change:	2012 Feb 6th.
+" Maintainer:	Bruce Woodward <bruce.woodward@gmail.com>
+" License:	Same license as vim
+"
+
+" This code couldn't be compatible.
+if exists("g:outline") || &cp
+  finish
+endif
+
+let g:outline = 1
 
 function! OutlineFoldLevel(lnum)
   let i = 0
