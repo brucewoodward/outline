@@ -1,5 +1,5 @@
 
-function! OrgFoldLevel(lnum)
+function! OutlineFoldLevel(lnum)
   let i = 0
   let line = getline(a:lnum)
   let l = strlen(line)
@@ -20,5 +20,5 @@ endfunction
 
 augroup org_mode
   autocmd!
-  autocmd BufRead *.org setlocal foldmethod=expr foldexpr=OrgFoldLevel(v:lnum)
+  autocmd BufRead *.org setlocal foldmethod=expr foldexpr=OutlineFoldLevel(v:lnum)
 augroup END
