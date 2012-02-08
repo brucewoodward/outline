@@ -1,11 +1,23 @@
+* Description.
 
-* copyright
+org.vim is intended to help use vim to create hierachy of notes, using headings 
+and subheadings.
+
+Each heading is represented by a fold. The fold will start with one more 
+asterix characters. The number of asterixes indicates the level of the heading.
+
+Bindings are provided for expanding and collapsing a fold by using the tab key 
+and shift-tab keys.
+
+Also a mapping is provided to search only the headings in file.
+
+* Copyright
 
 Same license as vim.
 
 * How to install.
 
-Copy into ~/.vim/plugin or ~/vimfiles/plugin on windows.
+Copy into ~/.vim/ftplugin or ~/vimfiles/ftplugin on windows.
 
 * How to use.
 
@@ -16,8 +28,7 @@ Two asterix characters would makes the fold level two etc.
 
 * TODO
 
-- Add functions to search only the headings.
-- Stop vim from automatically adding more asterix characters after the 
-  first one.
+- Stop vim from automatically adding more asterix characters after the first 
+one.
 
 
