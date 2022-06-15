@@ -1,5 +1,4 @@
 " Vim ftplugin to find files and buffers similar to textmate.
-" Last Change:   2012 Feb 7th.
 " Maintainer:    Bruce Woodward <bruce.woodward@gmail.com>
 " License:       Same license as vim
 "
