@@ -4,7 +4,6 @@
 " License:       Same license as vim
 "
  
-" This code couldn't be compatible.
 if exists("g:outline") || &cp
   finish
 endif
@@ -12,22 +11,8 @@ endif
 let g:outline = 1
 
 function! OutlineFoldLevel(lnum)
-  let i = 0
-  let line = getline(a:lnum)
-  let l = strlen(line)
-  " count the number of asterixes at the beginning of the line.
-  while i < l
-    if line[i] == '*'
-      let i = i + 1
-    else
-      break
-    endif
-  endwhile
-  if i == 0
-    return "="
-  else
-    return ">".i
-  endif
+  let c = count(getline(a:lnum, "*"))
+  return c == 0 ? "=" : ">".c
 endfunction
  
 function! OutlineFoldText()
