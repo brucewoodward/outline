@@ -10,7 +10,7 @@ endif
 let g:outline = 1
 
 function! OutlineFoldLevel(lnum)
-  let c = count(getline(a:lnum, "*"))
+  let c = count(getline(a:lnum), "*")
   return c == 0 ? "=" : ">".c
 endfunction
  
